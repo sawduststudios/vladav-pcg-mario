@@ -35,7 +35,7 @@ class VladavLevelGenerator: MarioLevelGenerator {
     // -------------------------------
     // ------- PREMADE LEVELS --------
     // -------------------------------
-    val easyPieces = arrayOf(
+    var easyPieces = arrayOf(
             LevelPiece(arrayOf(
                     "----------------",
                     "----------------",
@@ -43,16 +43,16 @@ class VladavLevelGenerator: MarioLevelGenerator {
                     "----------------",
                     "----------------",
                     "----------------",
+                    "---CCC----------",
+                    "----------------",
+                    "---XXX----------",
                     "----------------",
                     "----------------",
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "----o----o----o-",
-                    "----S----S----S-",
-                    "XXXXXXXXXXXXXXXX"
+                    "---------L2-----",
+                    "--TT------------",
+                    "--tt-----TT-----",
+                    "--ttg---gtt--g--",
+                    "XXttXXXXXttXXXXX"
             )),
             LevelPiece(arrayOf(
                     "----------------",
@@ -65,12 +65,12 @@ class VladavLevelGenerator: MarioLevelGenerator {
                     "----------------",
                     "----------------",
                     "----------------",
-                    "----t-----t-----",
-                    "----T-----T-----",
                     "----------------",
                     "----------------",
-                    "----------------",
-                    "XXXXXXXXXXXXXXXX"
+                    "---TT-----------",
+                    "---tt-------TT--",
+                    "---tt---xgggtt--",
+                    "XXXtt---XXXXttXX"
             )),
             LevelPiece(arrayOf(
                     "----------------",
@@ -82,17 +82,17 @@ class VladavLevelGenerator: MarioLevelGenerator {
                     "----------------",
                     "----------------",
                     "----------------",
-                    "----S----S----S-",
                     "----------------",
-                    "----@----@----@-",
+                    "------g---g---g-",
+                    "----CXX2XCXX1XU-",
                     "----------------",
                     "----------------",
-                    "----------------",
-                    "XXXXXXXXXXXXXXXX"
+                    "-------G--------",
+                    "XXXXXXXX---XXXXX"
             ))
     )
 
-    val midPieces = arrayOf(
+    var midPieces = arrayOf(
             LevelPiece(arrayOf(
                     "----------------",
                     "----------------",
@@ -101,15 +101,15 @@ class VladavLevelGenerator: MarioLevelGenerator {
                     "----------------",
                     "----------------",
                     "----------------",
-                    "------%--------%",
-                    "------%--------%",
-                    "------%--------%",
-                    "------S--------S",
-                    "------S--------S",
-                    "------S--------S",
-                    "------g--------g",
                     "----------------",
-                    "XXXXXXXXXXXXXXXX"
+                    "----------------",
+                    "----------------",
+                    "----------------",
+                    "----------------",
+                    "---TT-----------",
+                    "---tt-------TT--",
+                    "---tt---xgggtt--",
+                    "XXXtt---XXXXttXX"
             )),
             LevelPiece(arrayOf(
                     "----------------",
@@ -119,13 +119,13 @@ class VladavLevelGenerator: MarioLevelGenerator {
                     "----------------",
                     "----------------",
                     "----------------",
-                    "-------t-------t",
-                    "-------T-------T",
                     "----------------",
-                    "----SSS----SSS--",
                     "----------------",
+                    "----------------",
+                    "-----SS-----SS--",
+                    "----S------S----",
                     "----o-o----o-o--",
-                    "----------------",
+                    "----k--------k--",
                     "----g--------g--",
                     "XXXXXXXXXXXXXXXX"
             )),
@@ -135,74 +135,56 @@ class VladavLevelGenerator: MarioLevelGenerator {
                     "----------------",
                     "----------------",
                     "----------------",
+                    "---------------@",
                     "----------------",
-                    "-----#----------",
-                    "-----#----------",
-                    "-----#----------",
-                    "-----@----------",
                     "----------------",
-                    "-----C----------",
-                    "----------------",
-                    "----g-----------",
-                    "----------------",
-                    "XXXXXXXXXXXXXXXX"
+                    "------G---------",
+                    "------X------R--",
+                    "------X------X--",
+                    "------X------X--",
+                    "--X---X------X--",
+                    "--X---X------XXX",
+                    "--X---X------XXX",
+                    "XXX---X------XXX"
             ))
     )
 
-    val hardPieces = arrayOf(
+    var hardPieces = arrayOf(
             LevelPiece(arrayOf(
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "------%----%----",
-                    "------%----%----",
-                    "------%----%----",
-                    "------%----%----",
-                    "------S----S----",
-                    "------S----S----",
-                    "------S----S----",
-                    "------g----g----",
-                    "------k----k----",
-                    "------g----g----",
-                    "----------------",
-                    "XXXXXXXXXXXXXXXX"
+                    "----------------------------X---",
+                    "----------------------------X---",
+                    "----------------------------X---",
+                    "----------------------XXX---X---",
+                    "-------XXX-------K----------X---",
+                    "----------------XXX---------X---",
+                    "------------------X---------X---",
+                    "-XXX--------------X---------X---",
+                    "------Y-----------X---------X---",
+                    "------XX----------X--------XX---",
+                    "------------------X-------------",
+                    "---------XXX------X-------------",
+                    "---------X--------X---XX--------",
+                    "---------X--------X-----------G-",
+                    "-------XXX--------X---------XXXX",
+                    "---------X--------X---------XXXX"
             )),
             LevelPiece(arrayOf(
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "-------%--------",
-                    "-------%--------",
-                    "-------%--------",
-                    "-------%--------",
-                    "----------------",
-                    "------t---------",
-                    "------T---------",
-                    "------@---------",
-                    "------@---------",
-                    "------@---------",
-                    "------@---------",
-                    "------g---------",
-                    "XXXXXXXXXXXXXXXX"
-            )),
-            LevelPiece(arrayOf(
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "----------------",
-                    "-----###--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "-----#@#--------",
-                    "XXXXXXXXXXXXXXXX"
+                    "--------------------------------",
+                    "--------------------------------",
+                    "--------------------------------",
+                    "--------------------------------",
+                    "--------------------------------",
+                    "--------------------------------",
+                    "--------------------------------",
+                    "--------------------------------",
+                    "--------------------------------",
+                    "-------TT-------TT--------------",
+                    "-------tt-------tt--------------",
+                    "-------tt-------tt-----------TT-",
+                    "-TT----tt-------tt-----------tt-",
+                    "-tt----tt--TT---tt----TT-----tt-",
+                    "-tt----tt--tt---tt----tt-----tt-",
+                    "-tt----tt--tt---tt----tt-----tt-"
             ))
     )
 
@@ -226,10 +208,33 @@ class VladavLevelGenerator: MarioLevelGenerator {
         return LevelPiece(rows)
     }
 
+    fun mirrorLevelPiece(piece: LevelPiece): LevelPiece {
+        val mirroredRows = piece.rows.map { it.reversed() }.toTypedArray()
+        return LevelPiece(mirroredRows)
+    }
 
+    fun mirrorAllLevels() {
+        val easyCopy = easyPieces.toList()
+        easyCopy.forEach { piece ->
+            val mirroredPiece = mirrorLevelPiece(piece)
+            easyPieces += mirroredPiece
+        }
+        val midCopy = midPieces.toList()
+        midCopy.forEach { piece ->
+            val mirroredPiece = mirrorLevelPiece(piece)
+            midPieces += mirroredPiece
+        }
+        val hardCopy = hardPieces.toList()
+        hardCopy.forEach { piece ->
+            val mirroredPiece = mirrorLevelPiece(piece)
+            hardPieces += mirroredPiece
+        }
+    }
     override fun getGeneratedLevel(model: MarioLevelModel, timer: MarioTimer): String {
         val rng = Random.Default
         model.clearMap()
+
+        mirrorAllLevels()
 
         val pieceSequence = mutableListOf<LevelPiece>()
         var totalWidth = 0
@@ -317,7 +322,7 @@ class VladavLevelGenerator: MarioLevelGenerator {
 
         // TODO: Redo the Mario start?
         model.setBlock(0, model.height /2, MarioLevelModel.MARIO_START)
-        model.setBlock(0, 0, MarioLevelModel.GROUND)
+        model.setBlock(0, model.height-1, MarioLevelModel.GROUND)
 
         return model.map
     }

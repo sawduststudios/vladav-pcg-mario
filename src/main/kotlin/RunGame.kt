@@ -35,9 +35,9 @@ fun main() {
     // OLD Baumgarten agent
 //    val agent = agents.robinBaumgarten.Agent()
     // NEW Sosvald agent (better as validator)
-//    val agent = mff.agents.astar.Agent()
+    val agent = mff.agents.astar.Agent()
     // HUMAN control (S = jump, A = run/shoot)
-    val agent = agents.human.Agent()
+//    val agent = agents.human.Agent()
 
     val results = game.runGame(
             agent,
@@ -47,5 +47,5 @@ fun main() {
             true
     )
 
-    PlayLevel.printResults(results)
+    //PlayLevel.printResults(results)
 }
